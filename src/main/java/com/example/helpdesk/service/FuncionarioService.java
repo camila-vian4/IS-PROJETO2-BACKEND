@@ -32,7 +32,7 @@ public class FuncionarioService {
         return repository
                 .findAll()
                 .stream()
-                .map(f -> new FuncionarioResponseDTO(f.getId(), f.getNome(), f.getMatricula(), f.getCargo()))
+                .map(f -> new FuncionarioResponseDTO(f.getNome(), f.getMatricula(), f.getCargo()))
                 .toList();
     }
 
